@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bouzer Official Website</title>
-</head>
-<body>
-  <div id="header">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouzer Official Website</title>
+  </head>
+  <body>
+    <div id="home">
+      <div class="nav-bar">
         <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Mixing and Mastering</a></li>
-                <li><a href="#">Contact Me</a></li>
-            </ul>
+          <img src="https://ibb.co/ZTNxXrh" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Mixing and Mastering</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
         </nav>
-        <div class="header-text">
-            <p>Amapiano  Producer</p>
-            <h1>
-              Greetings, I am <span>Bouzer</span>, an accomplished Producer, adept in the realms of Sound Engineering, Mixing, and Mastering. 
-              With a wealth of experience spanning over a decade, I specialize in delivering top-notch services in Mixing, Mastering, and Ghost Production. 
-              Your pursuit of quality sound ends here.
-            </h1>
-            <div class="button">
-              <button class="button-1" >Listen</button>
-            </div>
+      </div>
+      <div id="About">
+        <div class="row">
+          <div class="home-col-1">
+            <h1>Amapiano Producer</h1>
+            <img src="https://ibb.co/H4c2ysB" />
+          </div>
+          <div class="home-col-2">
+            <p>
+              Greetings, I am <span>Bouzer</span>, an accomplished <span>Producer</span>, adept
+              in the realms of <span>Sound Engineering</span>, <span>Mixing and Mastering</span>. With a
+              wealth of experience spanning over a decade, I specialize in
+              delivering top-notch services in <span>Mixing</span>, <span>Mastering</span>, and <span>Ghost
+                Production</span>. Your pursuit of quality sound ends here.
+            </p>
+          </div>
         </div>
+      </div>
+      <div class="button-listen">
+        <a routerLink="/music"></a>
+        <button class="glowing-btn">
+        <span class="glowing-txt"
+          >LIS<span class="faulty-letter">T</span>EN
+        </span>
+      </button>
+      </div>
+      <router-outlet></router-outlet>
     </div>
-</div>
-</body>
+  </body>
 </html>
